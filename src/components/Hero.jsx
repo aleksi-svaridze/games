@@ -4,10 +4,9 @@ function Hero() {
   return (
     <div className="mt-10 mb-20">
       <div
-        className="h-96 rounded-xl flex items-center justify-end pr-10"
+        className="h-96 rounded-xl flex items-center justify-end bg-top bg-no-repeat bg-cover pr-10 shadow-[0_0_20px_5px_rgba(0,0,0,0.5)]"
         style={{
           backgroundImage: `url(${HeroBg})`,
-          boxShadow: "0 0 20px 5px rgba(0,0,0, .5)",
         }}
       >
         <div className="text-white max-w-1/2">
