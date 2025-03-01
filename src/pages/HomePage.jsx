@@ -1,18 +1,16 @@
 import { useState } from "react";
 import Hero from "../components/Hero";
-import ReactMultiCarousel from "../components/Carousel";
 import { Link } from "react-router";
-// import { ProductCard } from "../components/Cards";
-import MilesMoralesBig from "../assets/images/desktop/miles-morales-big.jpg";
-import RemasteredBig from "../assets/images/desktop/remastered-big.jpg";
-import Sp2Bib from "../assets/images/desktop/sp-2-big.jpg";
-import Responsive from "../components/Carousel";
+import { CarouselCard, ProductCard } from "../components/Cards";
+import MilesMorales from "../assets/images/desktop/spider-man-miles-morales.jpg";
+import Remastered from "../assets/images/desktop/spider-man-remastered.jpg";
+import SpiderMan2 from "../assets/images/desktop/spider-man-2.jpg";
 
 function HomePage() {
   const [pcGames] = useState([
-    { id: 1, src: MilesMoralesBig, title: "title 1", desc: "desc 1" },
-    { id: 2, src: Sp2Bib, title: "title 2", desc: "desc 2" },
-    { id: 3, src: RemasteredBig, title: "title 3", desc: "desc 3" },
+    { id: 1, src: MilesMorales, title: "title 1", desc: "desc 1" },
+    { id: 2, src: SpiderMan2, title: "title 2", desc: "desc 2" },
+    { id: 3, src: Remastered, title: "title 3", desc: "desc 3" },
   ]);
   return (
     <div className="h-full">
@@ -27,7 +25,16 @@ function HomePage() {
             View All
           </Link>
         </div>
-        <ReactMultiCarousel data={pcGames} />
+        <div className="flex flex-col md:flex-row items-center justify-between gap-x-2 md:gap-x-5 lg:gap-x-10">
+          {pcGames.map((item) => (
+            <CarouselCard
+              src={item.src}
+              title={item.title}
+              desc={item.desc}
+              key={item.id}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

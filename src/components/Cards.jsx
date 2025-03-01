@@ -1,11 +1,14 @@
+import { Link } from "react-router";
+
 export const CarouselCard = ({ title, desc, src }) => {
   return (
-    <article
-      className="h-80 p-5 rounded-xl bg-no-repeat bg-cover bg-top"
-      style={{ backgroundImage: `url(${src})` }}
-    >
-      <h2>{title}</h2>
-      <p>{desc}</p>
+    <article className="rounded-xl overflow-hidden shadow-[0_0_20px_5px_rgba(0,0,0,0.5)]">
+      <img className="w-full" src={src} alt={title} />
+      <div>
+        <h2>{title}</h2>
+        <p>{desc}</p>
+        <Link to={""}>View</Link>
+      </div>
     </article>
   );
 };
