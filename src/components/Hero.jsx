@@ -10,11 +10,11 @@ function Hero() {
         }}
       >
         <div className="text-white max-w-1/2 text-center md:text-left hidden md:block">
-          <h1 className="text-xl md:text-4xl font-bold">
-            Spider-man versions
-            <br /> for all platforms
+          <h1 className="text-xl md:text-4xl font-light tracking-widest">
+            Spider-Man versions for Xbox, <br />
+            PC and Sony playstation platforms
           </h1>
-          <h3 className="text-base md:text-xl font-medium mt-5">
+          <h3 className="text-base md:text-xl font-light tracking-wider mt-5">
             Some descrih4tion here...Some description here...Some description
             here...Some description here...
           </h3>

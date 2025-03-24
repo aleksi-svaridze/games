@@ -1,7 +1,10 @@
-import React from "react";
+import { useParams } from "react-router";
 
 function SingleProductPage() {
-  return <div className="h-full bg-green-500">Single page</div>;
+  const { id } = useParams();
+  return (
+    <div className="h-full bg-green-500 text-white">Single page {id} </div>
+  );
 }
 
 export default SingleProductPage;
