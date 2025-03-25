@@ -8,12 +8,12 @@ export const CarouselCard = ({ title, src }) => {
         className="w-full h-96 md:h-60 lg:h-80 xl:h-[400px] 2xl:h-[490px] bg-cover bg-center bg-no-repeat"
       ></div>
       <div className="py-5 px-4">
-        <h2 className="font-semibold text-xl md:text-base xl:text-2xl">
+        <h2 className="font-semibold text-xl md:text-base xl:text-2xl text-white">
           {title}
         </h2>
-        <Link to={""} className="text-lg border-2 mt-5 inline-block px-3 py-1">
+        <button className="text-lg text-white border-white border-2 mt-5 inline-block px-3 py-1">
           Get Game
-        </Link>
+        </button>
       </div>
     </article>
   );
