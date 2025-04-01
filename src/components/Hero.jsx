@@ -4,7 +4,7 @@ function Hero() {
   return (
     <div className="mb-20">
       <div
-        className="h-[500px] md:h-[580px] flex items-center justify-center md:justify-end bg-left md:bg-top bg-no-repeat bg-cover md:pr-10"
+        className="polygon-hero h-[500px] md:h-[580px] flex items-center justify-center md:justify-end bg-left md:bg-top bg-no-repeat bg-cover md:pr-10"
         style={{
           backgroundImage: `url(${HeroBg})`,
         }}

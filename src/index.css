@@ -10,3 +10,69 @@
     gray-dark: #0d0d0e;
     gray-light: #29292a;
 */
+
+@media only screen and (min-width: 786px) {
+  .polygon-hero {
+    clip-path: polygon(
+      0% 0%,
+      100% 0%,
+
+      100% 500px,
+      95% 500px,
+      90% 580px,
+
+      10% 580px,
+      5% 500px,
+      0% 500px
+    );
+  }
+}
+.polygon-hero {
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+
+    100% 450px,
+    95% 450px,
+    90% 500px,
+
+    10% 500px,
+    5% 450px,
+    0% 450px
+  );
+}
+.polygon-footer {
+  clip-path: polygon(
+    0% 0%,
+
+    5% 0%,
+    10% 50px,
+
+    90% 50px,
+    95% 0%,
+
+    100% 0,
+    100% 100%,
+    0% 100%
+  );
+}
+.polygon-right-img {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 85% 85%, 75% 100%, 0% 100%);
+}
+.polygon-top-img {
+  clip-path: polygon(0% 0%, 75% 0%, 85% 15%, 100% 15%, 100% 100%, 0% 100%);
+}
+.polygon-left-img {
+  clip-path: polygon(
+    0% 15%,
+    15% 15%,
+    25% 0%,
+
+    100% 0%,
+
+    100% 85%,
+    85% 85%,
+    75% 100%,
+    0% 100%
+  );
+}
