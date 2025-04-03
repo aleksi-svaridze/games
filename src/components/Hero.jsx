@@ -2,14 +2,14 @@ import HeroBg from "../assets/images/desktop/hero-big.webp";
 
 function Hero() {
   return (
-    <div className="mb-20">
+    <div className="mb-20 md:mb-0">
       <div
-        className="polygon-hero h-[500px] md:h-[580px] flex items-center justify-center md:justify-end bg-left md:bg-top bg-no-repeat bg-cover md:pr-10"
+        className="polygon-hero h-[500px] md:h-[580px] flex items-center justify-center md:justify-end bg-left md:bg-top bg-no-repeat bg-cover"
         style={{
           backgroundImage: `url(${HeroBg})`,
         }}
       >
-        <div className="text-white max-w-1/2 text-center md:text-left hidden md:block">
+        <div className="text-white max-w-1/2 text-center md:text-left hidden md:block mx-10">
           <h1 className="text-xl md:text-4xl font-light tracking-widest">
             Spider-Man PC Versions
           </h1>
